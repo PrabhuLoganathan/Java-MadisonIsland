@@ -89,7 +89,7 @@ public class SimpleTestWD {
     }
     //Filter in Women's page
     @Test
-    public void filterByLowPrice() throws InterruptedException{
+    public void checkoutWithElizabethKnitTop(){
         page.goToNewArrivalWomenPage()
                 .selectElizabethKnitTop()
                 .addElizabethKnitTopToCart("4")
@@ -103,6 +103,14 @@ public class SimpleTestWD {
                 .selectLafayetteDress()
                 .addLafayetteDressToCart("2")
                 .checkoutLafayetteDress()
+                .checkoutAsGuestAndPlaceOrder()
+                .confirmOrderHasBeenSent();
+    }
+    @Test
+    public void checkoutWithLudlowOxfordTop(){
+        page.goToTopsAndBlousesPage().selectLudlowOxford()
+                .addLudLowOxfordToCart("2")
+                .checkoutLudlowOxford()
                 .checkoutAsGuestAndPlaceOrder()
                 .confirmOrderHasBeenSent();
     }

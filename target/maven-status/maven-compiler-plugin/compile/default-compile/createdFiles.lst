@@ -1,1 +1,5 @@
+selectors/CheckoutPageLocators.class
+selectors/ShoppingCartPageLocators.class
+selectors/womenPages/WomenNewArrivalsLocators.class
 selectors/LandPageLocators.class
+selectors/AddToCartLocators.class

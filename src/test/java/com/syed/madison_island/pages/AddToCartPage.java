@@ -42,6 +42,12 @@ public class AddToCartPage {
     private WebElement addToCart;
     @FindBy(how = How.XPATH,using = AddToCartLocators.BLUE_COLOR)
     private WebElement blueColor;
+    @FindBy(how = How.XPATH,using = AddToCartLocators.WHITE_COLOR)
+    private WebElement whiteColor;
+    @FindBy(how = How.XPATH,using = AddToCartLocators.TAUPE_COLOR)
+    private WebElement taupeColor;
+    @FindBy(how = How.XPATH,using = AddToCartLocators.BLACK_COLOR)
+    private WebElement blackColor;
 
     public QuoteListPage addAQuoteOnAnItem(String numberOfItem){
         wait.until(ExpectedConditions.elementToBeClickable(colorDropDown));
@@ -65,6 +71,19 @@ public class AddToCartPage {
         selectSizeColorQTYAndAddToCart(numberOfItem,blueColor, sizeMedium);
         return PageFactory.initElements(driver, ShoppingCartPage.class);
     }
+    public ShoppingCartPage addLudLowOxfordToCart(String numberOfItem){
+        selectSizeColorQTYAndAddToCart(numberOfItem,whiteColor,smallSize);
+        return PageFactory.initElements(driver,ShoppingCartPage.class);
+    }
+    public ShoppingCartPage addDelancyCardiganToCart(String numberOfItem){
+        selectSizeColorQTYAndAddToCart(numberOfItem,taupeColor,smallSize);
+        return PageFactory.initElements(driver, ShoppingCartPage.class);
+    }
+    public ShoppingCartPage addNolitaCamiTopToCart(String numberOfItem){
+        selectSizeColorQTYAndAddToCart(numberOfItem, blackColor, sizeMedium);
+        return PageFactory.initElements(driver,ShoppingCartPage.class);
+    }
+
     private void selectSizeColorQTYAndAddToCart(String numberOfItem, WebElement color, WebElement size){
         wait.until(ExpectedConditions.elementToBeClickable(colorDropDown));
         colorDropDown.click();

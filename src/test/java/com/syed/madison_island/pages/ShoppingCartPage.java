@@ -46,6 +46,18 @@ public class ShoppingCartPage {
         setEstimateShipping("Florida", "Miami", "34323", flatShipping);
         return PageFactory.initElements(driver, CheckoutPage.class);
     }
+    public CheckoutPage checkoutLudlowOxford(){
+        proceedToCheckoutWithoutEstimatingShipping("New York","NYC","10013");
+        return PageFactory.initElements(driver, CheckoutPage.class);
+    }
+    public CheckoutPage checkoutDelancyCardigan(){
+        proceedToCheckoutWithoutEstimatingShipping("Arizona", "Phoenix", "23432");
+        return PageFactory.initElements(driver,CheckoutPage.class);
+    }
+    public CheckoutPage checkoutNolitaCamiTop(){
+        proceedToCheckoutWithoutEstimatingShipping("Georgia", "Atlanta", "95647");
+        return PageFactory.initElements(driver,CheckoutPage.class);
+    }
 
     private void setEstimateShipping(String whichState, String whichCity, String whichZip, WebElement typeOfShipping){
         wait.until(ExpectedConditions.elementToBeClickable(state));
@@ -61,7 +73,17 @@ public class ShoppingCartPage {
         updateShipping.click();
         checkoutButton.click();
         wait.until(ExpectedConditions.titleIs("Checkout"));
-
+    }
+    private void proceedToCheckoutWithoutEstimatingShipping(String whichState, String whichCity, String whichZip){
+        wait.until(ExpectedConditions.elementToBeClickable(state));
+        Select select = new Select(state);
+        select.selectByVisibleText(whichState);
+        city.clear();
+        city.sendKeys(whichCity);
+        zip.clear();
+        zip.sendKeys(whichZip);
+        checkoutButton.click();
+        wait.until(ExpectedConditions.titleIs("Checkout"));
     }
 
 }
