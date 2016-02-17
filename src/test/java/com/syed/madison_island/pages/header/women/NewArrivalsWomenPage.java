@@ -13,7 +13,7 @@ import selectors.womenPages.WomenNewArrivalsLocators;
 import static org.testng.Assert.assertEquals;
 
 /**
- * Created by sayem on 2/4/16.
+ * Created by syed on 2/4/16.
  */
 public class NewArrivalsWomenPage {
     private WebDriver driver;

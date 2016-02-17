@@ -12,7 +12,7 @@ import selectors.LandPageLocators;
 import selectors.womenPages.WomenNewArrivalsLocators;
 
 /**
- * Created by sayem on 2/10/16.
+ * Created by syed on 2/10/16.
  */
 public class Test123 {
 

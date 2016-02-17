@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import selectors.AddToCartLocators;
 
 /**
- * Created by sayem on 2/5/16.
+ * Created by syed on 2/5/16.
  */
 public class AddToCartPage {
 
