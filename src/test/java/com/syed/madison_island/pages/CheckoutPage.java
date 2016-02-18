@@ -1,5 +1,6 @@
 package com.syed.madison_island.pages;
 
+import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,6 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import selectors.CheckoutPageLocators;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.AssertJUnit.assertTrue;
 
 /**
  * Created by syed on 2/5/16.
@@ -50,6 +52,8 @@ public class CheckoutPage {
     WebElement continueBilling;
     @FindBy(how = How.XPATH,using = CheckoutPageLocators.FREE_SHIPPING)
     WebElement freeShipping;
+    @FindBy(how = How.XPATH,using = CheckoutPageLocators.NEXT_DAY_SHIPPING)
+    WebElement nextDayAirShipping;
     @FindBy(how = How.XPATH,using = CheckoutPageLocators.CONTINUE_SHIPPING)
     WebElement continueShipping;
     @FindBy(how = How.XPATH,using = CheckoutPageLocators.CASH)
@@ -62,12 +66,24 @@ public class CheckoutPage {
     WebElement register;
     @FindBy(how = How.XPATH,using = CheckoutPageLocators.ORDER_CONFIRMATION_TITLE)
     WebElement orderConfirmationPageTitle;
+    @FindBy(how = How.XPATH,using = CheckoutPageLocators.PASSWORD_REGISTER)
+    WebElement passwordRegister;
+    @FindBy(how = How.XPATH,using = CheckoutPageLocators.PASSWORD_CONFIRM)
+    WebElement passwordConfirm;
 
     public CheckoutPage checkoutAsGuestAndPlaceOrder(){
         checkoutGuestSameBillingAndShippingAddress("Syed", "Selenium", "Syed@Selenium.com", "921 Third Ave",
-                "NYC","New York", "10013","3478889999",freeShipping,cash);
+                "NYC","New York", "10013","3478889999",nextDayAirShipping,cash);
         return this;
     }
+
+    public CheckoutPage checkoutByRegisteringAndPlaceOrder(){
+        String randomString = RandomStringUtils.random(8, true, true);
+        registerAndCheckoutSameBillingAndShippingAddress("Syed","Selenium", randomString+"@Selenium.com", "221 E. Canal Street",
+                "NYC", "New York", "10013", "3475964784", randomString, freeShipping, cash);
+        return this;
+    }
+
     public CheckoutPage confirmOrderHasBeenSent(){
         wait.until(ExpectedConditions.visibilityOf(orderConfirmationPageTitle));
         assertEquals(orderConfirmationPageTitle.getText().toLowerCase(), "your order has been received.");
@@ -122,7 +138,7 @@ public class CheckoutPage {
     private void registerAndCheckoutSameBillingAndShippingAddress(String fName, String lName, String registerEmail,
                                      String registerAddress, String registerCity,
                                      String registerState, String registerZip, String registerPhone,
-                                     WebElement typeOfShipping, WebElement typeOfPayment){
+                                     String registerPassword,WebElement typeOfShipping, WebElement typeOfPayment){
 
         wait.until(ExpectedConditions.elementToBeClickable(register));
         if (!register.isSelected()){
@@ -147,6 +163,10 @@ public class CheckoutPage {
         zip.sendKeys(registerZip);
         phone.clear();
         phone.sendKeys(registerPhone);
+        passwordRegister.clear();
+        passwordRegister.sendKeys(registerPassword);
+        passwordConfirm.clear();
+        passwordConfirm.sendKeys(registerPassword);
         continueBilling.click();
         if (!shipToBillingAddress.isSelected()){
             shipToBillingAddress.click();
@@ -161,7 +181,11 @@ public class CheckoutPage {
             typeOfPayment.click();
         }
         continuePayment.click();
-    }
+        wait.until(ExpectedConditions.elementToBeClickable(placeOrder));
+        placeOrder.click();
+        wait.until(ExpectedConditions.titleIs("Magento Commerce"));
+        assertTrue(driver.getTitle().equalsIgnoreCase("Magento Commerce"));
 
+    }
 
 }

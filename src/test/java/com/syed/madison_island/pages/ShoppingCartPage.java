@@ -38,6 +38,7 @@ public class ShoppingCartPage {
     @FindBy(how = How.XPATH,using = ShoppingCartPageLocators.UPDATE_TOTAL_AFTER_SHIPPING)
     WebElement updateShipping;
 
+    //Checkout with items from women new arrivals
     public CheckoutPage checkoutElizabethKnitTop(){
         setEstimateShipping("New York", "Bronx", "10460", flatShipping);
         return PageFactory.initElements(driver, CheckoutPage.class);
@@ -46,6 +47,7 @@ public class ShoppingCartPage {
         setEstimateShipping("Florida", "Miami", "34323", flatShipping);
         return PageFactory.initElements(driver, CheckoutPage.class);
     }
+    //checkout with items from women Tops and Blouses
     public CheckoutPage checkoutLudlowOxford(){
         proceedToCheckoutWithoutEstimatingShipping("New York","NYC","10013");
         return PageFactory.initElements(driver, CheckoutPage.class);
@@ -57,6 +59,33 @@ public class ShoppingCartPage {
     public CheckoutPage checkoutNolitaCamiTop(){
         proceedToCheckoutWithoutEstimatingShipping("Georgia", "Atlanta", "95647");
         return PageFactory.initElements(driver,CheckoutPage.class);
+    }
+    //checkout with items from women Dresses and SKirts
+    public CheckoutPage checkoutEssexPencilSkirt(){
+        proceedToCheckoutWithoutEstimatingShipping("North Carolina", "Charleston", "46584");
+        return PageFactory.initElements(driver, CheckoutPage.class);
+    }
+    public CheckoutPage checkoutRacerBackMaxiDress(){
+        proceedToCheckoutWithoutEstimatingShipping("New Jersey", "Newark", "65487");
+        return PageFactory.initElements(driver, CheckoutPage.class);
+    }
+    public CheckoutPage checkoutLudlowSheathDress(){
+        proceedToCheckoutWithoutEstimatingShipping("New Mexico", "Albaquarqe", "87789");
+        return PageFactory.initElements(driver, CheckoutPage.class);
+    }
+
+    //Checkout with items from MEN Blazers
+    public CheckoutPage checkoutSullivanCoat(){
+        proceedToCheckoutWithoutEstimatingShipping("California", "LA", "90210");
+        return PageFactory.initElements(driver,CheckoutPage.class);
+    }
+    public CheckoutPage checkoutLinenBlazer(){
+        proceedToCheckoutWithoutEstimatingShipping("California", "San Francisco", "95461");
+        return PageFactory.initElements(driver, CheckoutPage.class);
+    }
+    public CheckoutPage checkoutStretchCottonBlazer(){
+        proceedToCheckoutWithoutEstimatingShipping("California", "San Diego", "95642");
+        return PageFactory.initElements(driver, CheckoutPage.class);
     }
 
     private void setEstimateShipping(String whichState, String whichCity, String whichZip, WebElement typeOfShipping){

@@ -11,6 +11,10 @@ public class AddToCartLocators {
     public static final String WHITE_COLOR = "//*[@id='attribute92']/option[2]";
     public static final String TAUPE_COLOR = "//*[@id='attribute92']/option[2]";
     public static final String BLACK_COLOR = "//*[@id='attribute92']/option[3]";
+    public static final String CHARCOAL_COLOR = "//*[@id='attribute92']/option[2]";
+    public static final String PURPLE_COLOR = "//*[@id='attribute92']/option[2]";
+    public static final String SILVER_COLOR = "//*[@id='attribute92']/option[2]";
+
     public static final String SIZE ="//*[@id='attribute180']";
     public static final String SIZE_S = "//*[@id='attribute180']/option[2]";
     public static final String SIZE_M = "//*[@id='attribute180']/option[3]";

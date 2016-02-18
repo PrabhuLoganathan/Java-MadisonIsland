@@ -1,15 +1,7 @@
 package com.syed.madison_island.tests;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.testng.annotations.Test;
-import selectors.LandPageLocators;
-import selectors.womenPages.WomenNewArrivalsLocators;
 
 /**
  * Created by syed on 2/10/16.
@@ -19,6 +11,7 @@ public class Test123 {
     @Test
     public void sampleTest(){
 
+        /*
         WebDriver driver = new FirefoxDriver();
         WebDriverWait wait = new WebDriverWait(driver,10,100);
         Actions actions = new Actions(driver);
@@ -34,6 +27,10 @@ public class Test123 {
         wait.until(ExpectedConditions.elementToBeClickable(dress));
         System.out.println(dress.getText());
         dress.click();
+        */
+        String string = RandomStringUtils.random(6, true, false);
+        System.out.println(string);
+
 
 
     }

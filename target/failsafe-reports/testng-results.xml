@@ -1,125 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="13" passed="13">
+<testng-results skipped="0" failed="0" total="11" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="137253" started-at="2016-02-16T00:47:14Z" finished-at="2016-02-16T00:49:31Z">
+  <suite name="Surefire suite" duration-ms="501937" started-at="2016-02-18T02:30:26Z" finished-at="2016-02-18T02:38:47Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="137253" started-at="2016-02-16T00:47:14Z" finished-at="2016-02-16T00:49:31Z">
-      <class name="com.syed.madison_island.tests.SimpleTestWD">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.syed.madison_island.tests.SimpleTestWD@614c5515]" name="setUp" is-config="true" duration-ms="10103" started-at="2016-02-15T19:47:04Z" finished-at="2016-02-15T19:47:14Z">
+    <test name="Surefire test" duration-ms="501937" started-at="2016-02-18T02:30:26Z" finished-at="2016-02-18T02:38:47Z">
+      <class name="com.syed.madison_island.tests.MenSectionTestWD">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.syed.madison_island.tests.MenSectionTestWD@6be46e8f]" name="setUp" is-config="true" duration-ms="11049" started-at="2016-02-17T21:30:05Z" finished-at="2016-02-17T21:30:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="checkoutWithElizabethKnitTop()[pri:0, instance:com.syed.madison_island.tests.SimpleTestWD@614c5515]" name="checkoutWithElizabethKnitTop" duration-ms="54517" started-at="2016-02-15T19:47:14Z" finished-at="2016-02-15T19:48:09Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.syed.madison_island.tests.WomenSectionTestWD@3567135c]" name="setUp" is-config="true" duration-ms="9179" started-at="2016-02-17T21:30:16Z" finished-at="2016-02-17T21:30:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkoutWithElizabethKnitTop -->
-        <test-method status="PASS" signature="clearCookies()[pri:0, instance:com.syed.madison_island.tests.SimpleTestWD@614c5515]" name="clearCookies" is-config="true" duration-ms="7" started-at="2016-02-15T19:48:09Z" finished-at="2016-02-15T19:48:09Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="checkoutWithLinenBlazer()[pri:0, instance:com.syed.madison_island.tests.MenSectionTestWD@6be46e8f]" name="checkoutWithLinenBlazer" duration-ms="41214" started-at="2016-02-17T21:30:26Z" finished-at="2016-02-17T21:31:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clearCookies -->
-        <test-method status="PASS" signature="checkoutWithLafayetteDress()[pri:0, instance:com.syed.madison_island.tests.SimpleTestWD@614c5515]" name="checkoutWithLafayetteDress" duration-ms="53832" started-at="2016-02-15T19:48:09Z" finished-at="2016-02-15T19:49:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkoutWithLafayetteDress -->
-        <test-method status="PASS" signature="clearCookies()[pri:0, instance:com.syed.madison_island.tests.SimpleTestWD@614c5515]" name="clearCookies" is-config="true" duration-ms="5" started-at="2016-02-15T19:49:02Z" finished-at="2016-02-15T19:49:02Z">
+        </test-method> <!-- checkoutWithLinenBlazer -->
+        <test-method status="PASS" signature="clearCookies()[pri:0, instance:com.syed.madison_island.tests.MenSectionTestWD@6be46e8f]" name="clearCookies" is-config="true" duration-ms="7" started-at="2016-02-17T21:31:07Z" finished-at="2016-02-17T21:31:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearCookies -->
-        <test-method status="PASS" signature="goToBlazerPage()[pri:0, instance:com.syed.madison_island.tests.SimpleTestWD@614c5515]" name="goToBlazerPage" duration-ms="2610" started-at="2016-02-15T19:49:02Z" finished-at="2016-02-15T19:49:05Z">
+        <test-method status="PASS" signature="checkoutWithStretchCottonBlazer()[pri:0, instance:com.syed.madison_island.tests.MenSectionTestWD@6be46e8f]" name="checkoutWithStretchCottonBlazer" duration-ms="41979" started-at="2016-02-17T21:31:07Z" finished-at="2016-02-17T21:31:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goToBlazerPage -->
-        <test-method status="PASS" signature="clearCookies()[pri:0, instance:com.syed.madison_island.tests.SimpleTestWD@614c5515]" name="clearCookies" is-config="true" duration-ms="6" started-at="2016-02-15T19:49:05Z" finished-at="2016-02-15T19:49:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clearCookies -->
-        <test-method status="PASS" signature="goToDressesAndSkirtsPage()[pri:0, instance:com.syed.madison_island.tests.SimpleTestWD@614c5515]" name="goToDressesAndSkirtsPage" duration-ms="3037" started-at="2016-02-15T19:49:05Z" finished-at="2016-02-15T19:49:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToDressesAndSkirtsPage -->
-        <test-method status="PASS" signature="clearCookies()[pri:0, instance:com.syed.madison_island.tests.SimpleTestWD@614c5515]" name="clearCookies" is-config="true" duration-ms="9" started-at="2016-02-15T19:49:08Z" finished-at="2016-02-15T19:49:08Z">
+        </test-method> <!-- checkoutWithStretchCottonBlazer -->
+        <test-method status="PASS" signature="clearCookies()[pri:0, instance:com.syed.madison_island.tests.MenSectionTestWD@6be46e8f]" name="clearCookies" is-config="true" duration-ms="5" started-at="2016-02-17T21:31:49Z" finished-at="2016-02-17T21:31:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearCookies -->
-        <test-method status="PASS" signature="goToMenPage()[pri:0, instance:com.syed.madison_island.tests.SimpleTestWD@614c5515]" name="goToMenPage" duration-ms="1926" started-at="2016-02-15T19:49:08Z" finished-at="2016-02-15T19:49:10Z">
+        <test-method status="PASS" signature="checkoutWithSullivanCoat()[pri:0, instance:com.syed.madison_island.tests.MenSectionTestWD@6be46e8f]" name="checkoutWithSullivanCoat" duration-ms="45066" started-at="2016-02-17T21:31:49Z" finished-at="2016-02-17T21:32:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goToMenPage -->
-        <test-method status="PASS" signature="clearCookies()[pri:0, instance:com.syed.madison_island.tests.SimpleTestWD@614c5515]" name="clearCookies" is-config="true" duration-ms="5" started-at="2016-02-15T19:49:10Z" finished-at="2016-02-15T19:49:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clearCookies -->
-        <test-method status="PASS" signature="goToNewArrivalPage()[pri:0, instance:com.syed.madison_island.tests.SimpleTestWD@614c5515]" name="goToNewArrivalPage" duration-ms="2594" started-at="2016-02-15T19:49:10Z" finished-at="2016-02-15T19:49:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToNewArrivalPage -->
-        <test-method status="PASS" signature="clearCookies()[pri:0, instance:com.syed.madison_island.tests.SimpleTestWD@614c5515]" name="clearCookies" is-config="true" duration-ms="7" started-at="2016-02-15T19:49:13Z" finished-at="2016-02-15T19:49:13Z">
+        </test-method> <!-- checkoutWithSullivanCoat -->
+        <test-method status="PASS" signature="clearCookies()[pri:0, instance:com.syed.madison_island.tests.MenSectionTestWD@6be46e8f]" name="clearCookies" is-config="true" duration-ms="5" started-at="2016-02-17T21:32:34Z" finished-at="2016-02-17T21:32:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearCookies -->
-        <test-method status="PASS" signature="goToNewArrivalsMenPage()[pri:0, instance:com.syed.madison_island.tests.SimpleTestWD@614c5515]" name="goToNewArrivalsMenPage" duration-ms="3090" started-at="2016-02-15T19:49:13Z" finished-at="2016-02-15T19:49:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToNewArrivalsMenPage -->
-        <test-method status="PASS" signature="clearCookies()[pri:0, instance:com.syed.madison_island.tests.SimpleTestWD@614c5515]" name="clearCookies" is-config="true" duration-ms="7" started-at="2016-02-15T19:49:16Z" finished-at="2016-02-15T19:49:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clearCookies -->
-        <test-method status="PASS" signature="goToPantsAndDenimWomenPage()[pri:0, instance:com.syed.madison_island.tests.SimpleTestWD@614c5515]" name="goToPantsAndDenimWomenPage" duration-ms="2357" started-at="2016-02-15T19:49:16Z" finished-at="2016-02-15T19:49:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToPantsAndDenimWomenPage -->
-        <test-method status="PASS" signature="clearCookies()[pri:0, instance:com.syed.madison_island.tests.SimpleTestWD@614c5515]" name="clearCookies" is-config="true" duration-ms="5" started-at="2016-02-15T19:49:18Z" finished-at="2016-02-15T19:49:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clearCookies -->
-        <test-method status="PASS" signature="goToShirtsPage()[pri:0, instance:com.syed.madison_island.tests.SimpleTestWD@614c5515]" name="goToShirtsPage" duration-ms="2727" started-at="2016-02-15T19:49:18Z" finished-at="2016-02-15T19:49:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToShirtsPage -->
-        <test-method status="PASS" signature="clearCookies()[pri:0, instance:com.syed.madison_island.tests.SimpleTestWD@614c5515]" name="clearCookies" is-config="true" duration-ms="9" started-at="2016-02-15T19:49:21Z" finished-at="2016-02-15T19:49:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clearCookies -->
-        <test-method status="PASS" signature="goToTeesKnitsAndPoloPage()[pri:0, instance:com.syed.madison_island.tests.SimpleTestWD@614c5515]" name="goToTeesKnitsAndPoloPage" duration-ms="2930" started-at="2016-02-15T19:49:21Z" finished-at="2016-02-15T19:49:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToTeesKnitsAndPoloPage -->
-        <test-method status="PASS" signature="clearCookies()[pri:0, instance:com.syed.madison_island.tests.SimpleTestWD@614c5515]" name="clearCookies" is-config="true" duration-ms="8" started-at="2016-02-15T19:49:24Z" finished-at="2016-02-15T19:49:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clearCookies -->
-        <test-method status="PASS" signature="goToTopsAndBlousesPage()[pri:0, instance:com.syed.madison_island.tests.SimpleTestWD@614c5515]" name="goToTopsAndBlousesPage" duration-ms="3315" started-at="2016-02-15T19:49:24Z" finished-at="2016-02-15T19:49:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToTopsAndBlousesPage -->
-        <test-method status="PASS" signature="clearCookies()[pri:0, instance:com.syed.madison_island.tests.SimpleTestWD@614c5515]" name="clearCookies" is-config="true" duration-ms="7" started-at="2016-02-15T19:49:27Z" finished-at="2016-02-15T19:49:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clearCookies -->
-        <test-method status="PASS" signature="goToWomenPage()[pri:0, instance:com.syed.madison_island.tests.SimpleTestWD@614c5515]" name="goToWomenPage" duration-ms="1684" started-at="2016-02-15T19:49:27Z" finished-at="2016-02-15T19:49:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToWomenPage -->
-        <test-method status="PASS" signature="clearCookies()[pri:0, instance:com.syed.madison_island.tests.SimpleTestWD@614c5515]" name="clearCookies" is-config="true" duration-ms="5" started-at="2016-02-15T19:49:29Z" finished-at="2016-02-15T19:49:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clearCookies -->
-        <test-method status="PASS" signature="gotoPantsAndDenimMenPage()[pri:0, instance:com.syed.madison_island.tests.SimpleTestWD@614c5515]" name="gotoPantsAndDenimMenPage" duration-ms="2537" started-at="2016-02-15T19:49:29Z" finished-at="2016-02-15T19:49:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gotoPantsAndDenimMenPage -->
-        <test-method status="PASS" signature="clearCookies()[pri:0, instance:com.syed.madison_island.tests.SimpleTestWD@614c5515]" name="clearCookies" is-config="true" duration-ms="4" started-at="2016-02-15T19:49:31Z" finished-at="2016-02-15T19:49:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clearCookies -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.syed.madison_island.tests.SimpleTestWD@614c5515]" name="tearDown" is-config="true" duration-ms="87" started-at="2016-02-15T19:49:31Z" finished-at="2016-02-15T19:49:31Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.syed.madison_island.tests.MenSectionTestWD@6be46e8f]" name="tearDown" is-config="true" duration-ms="95" started-at="2016-02-17T21:38:48Z" finished-at="2016-02-17T21:38:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.syed.madison_island.tests.SimpleTestWD -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.syed.madison_island.tests.WomenSectionTestWD@3567135c]" name="tearDown" is-config="true" duration-ms="90" started-at="2016-02-17T21:38:48Z" finished-at="2016-02-17T21:38:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.syed.madison_island.tests.MenSectionTestWD -->
+      <class name="com.syed.madison_island.tests.WomenSectionTestWD">
+        <test-method status="PASS" signature="checkoutWithDelancyCardigan()[pri:0, instance:com.syed.madison_island.tests.WomenSectionTestWD@3567135c]" name="checkoutWithDelancyCardigan" duration-ms="45641" started-at="2016-02-17T21:32:34Z" finished-at="2016-02-17T21:33:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutWithDelancyCardigan -->
+        <test-method status="PASS" signature="clearCookies()[pri:0, instance:com.syed.madison_island.tests.WomenSectionTestWD@3567135c]" name="clearCookies" is-config="true" duration-ms="5" started-at="2016-02-17T21:33:19Z" finished-at="2016-02-17T21:33:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearCookies -->
+        <test-method status="PASS" signature="checkoutWithElizabethKnitTop()[pri:0, instance:com.syed.madison_island.tests.WomenSectionTestWD@3567135c]" name="checkoutWithElizabethKnitTop" duration-ms="61032" started-at="2016-02-17T21:33:19Z" finished-at="2016-02-17T21:34:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutWithElizabethKnitTop -->
+        <test-method status="PASS" signature="clearCookies()[pri:0, instance:com.syed.madison_island.tests.WomenSectionTestWD@3567135c]" name="clearCookies" is-config="true" duration-ms="6" started-at="2016-02-17T21:34:21Z" finished-at="2016-02-17T21:34:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearCookies -->
+        <test-method status="PASS" signature="checkoutWithEssexPencilDress()[pri:0, instance:com.syed.madison_island.tests.WomenSectionTestWD@3567135c]" name="checkoutWithEssexPencilDress" duration-ms="44351" started-at="2016-02-17T21:34:21Z" finished-at="2016-02-17T21:35:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutWithEssexPencilDress -->
+        <test-method status="PASS" signature="clearCookies()[pri:0, instance:com.syed.madison_island.tests.WomenSectionTestWD@3567135c]" name="clearCookies" is-config="true" duration-ms="4" started-at="2016-02-17T21:35:05Z" finished-at="2016-02-17T21:35:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearCookies -->
+        <test-method status="PASS" signature="checkoutWithLafayetteDress()[pri:0, instance:com.syed.madison_island.tests.WomenSectionTestWD@3567135c]" name="checkoutWithLafayetteDress" duration-ms="54908" started-at="2016-02-17T21:35:05Z" finished-at="2016-02-17T21:36:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutWithLafayetteDress -->
+        <test-method status="PASS" signature="clearCookies()[pri:0, instance:com.syed.madison_island.tests.WomenSectionTestWD@3567135c]" name="clearCookies" is-config="true" duration-ms="6" started-at="2016-02-17T21:36:00Z" finished-at="2016-02-17T21:36:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearCookies -->
+        <test-method status="PASS" signature="checkoutWithLudlowOxfordTop()[pri:0, instance:com.syed.madison_island.tests.WomenSectionTestWD@3567135c]" name="checkoutWithLudlowOxfordTop" duration-ms="41121" started-at="2016-02-17T21:36:00Z" finished-at="2016-02-17T21:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutWithLudlowOxfordTop -->
+        <test-method status="PASS" signature="clearCookies()[pri:0, instance:com.syed.madison_island.tests.WomenSectionTestWD@3567135c]" name="clearCookies" is-config="true" duration-ms="5" started-at="2016-02-17T21:36:41Z" finished-at="2016-02-17T21:36:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearCookies -->
+        <test-method status="PASS" signature="checkoutWithLudlowSheathDress()[pri:0, instance:com.syed.madison_island.tests.WomenSectionTestWD@3567135c]" name="checkoutWithLudlowSheathDress" duration-ms="42237" started-at="2016-02-17T21:36:41Z" finished-at="2016-02-17T21:37:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutWithLudlowSheathDress -->
+        <test-method status="PASS" signature="clearCookies()[pri:0, instance:com.syed.madison_island.tests.WomenSectionTestWD@3567135c]" name="clearCookies" is-config="true" duration-ms="5" started-at="2016-02-17T21:37:23Z" finished-at="2016-02-17T21:37:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearCookies -->
+        <test-method status="PASS" signature="checkoutWithNolitaCamiTop()[pri:0, instance:com.syed.madison_island.tests.WomenSectionTestWD@3567135c]" name="checkoutWithNolitaCamiTop" duration-ms="45601" started-at="2016-02-17T21:37:23Z" finished-at="2016-02-17T21:38:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutWithNolitaCamiTop -->
+        <test-method status="PASS" signature="clearCookies()[pri:0, instance:com.syed.madison_island.tests.WomenSectionTestWD@3567135c]" name="clearCookies" is-config="true" duration-ms="5" started-at="2016-02-17T21:38:09Z" finished-at="2016-02-17T21:38:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearCookies -->
+        <test-method status="PASS" signature="checkoutWithRacerBackMaxiDress()[pri:0, instance:com.syed.madison_island.tests.WomenSectionTestWD@3567135c]" name="checkoutWithRacerBackMaxiDress" duration-ms="38714" started-at="2016-02-17T21:38:09Z" finished-at="2016-02-17T21:38:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutWithRacerBackMaxiDress -->
+        <test-method status="PASS" signature="clearCookies()[pri:0, instance:com.syed.madison_island.tests.WomenSectionTestWD@3567135c]" name="clearCookies" is-config="true" duration-ms="5" started-at="2016-02-17T21:38:47Z" finished-at="2016-02-17T21:38:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearCookies -->
+      </class> <!-- com.syed.madison_island.tests.WomenSectionTestWD -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

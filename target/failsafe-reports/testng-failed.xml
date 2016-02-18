@@ -3,7 +3,8 @@
 <suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]" parallel="methods">
   <test name="Surefire test">
     <classes>
-      <class name="com.syed.madison_island.tests.SimpleTestWD"/>
+      <class name="com.syed.madison_island.tests.MenSectionTestWD"/>
+      <class name="com.syed.madison_island.tests.WomenSectionTestWD"/>
     </classes>
   </test> <!-- Surefire test -->
 </suite> <!-- Failed suite [Surefire suite] -->

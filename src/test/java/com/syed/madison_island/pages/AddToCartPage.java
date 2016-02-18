@@ -48,6 +48,12 @@ public class AddToCartPage {
     private WebElement taupeColor;
     @FindBy(how = How.XPATH,using = AddToCartLocators.BLACK_COLOR)
     private WebElement blackColor;
+    @FindBy(how = How.XPATH,using = AddToCartLocators.CHARCOAL_COLOR)
+    private WebElement charcoalColor;
+    @FindBy(how = How.XPATH,using = AddToCartLocators.PURPLE_COLOR)
+    private WebElement purpleColor;
+    @FindBy(how = How.XPATH,using = AddToCartLocators.SILVER_COLOR)
+    private WebElement silverColor;
 
     public QuoteListPage addAQuoteOnAnItem(String numberOfItem){
         wait.until(ExpectedConditions.elementToBeClickable(colorDropDown));
@@ -63,6 +69,7 @@ public class AddToCartPage {
         return PageFactory.initElements(driver, QuoteListPage.class);
     }
 
+    // Items from Women New Arrivals
     public ShoppingCartPage addElizabethKnitTopToCart(String numberOfItem){
        selectSizeColorQTYAndAddToCart(numberOfItem,indigoColor,smallSize);
         return PageFactory.initElements(driver,ShoppingCartPage.class);
@@ -71,6 +78,7 @@ public class AddToCartPage {
         selectSizeColorQTYAndAddToCart(numberOfItem,blueColor, sizeMedium);
         return PageFactory.initElements(driver, ShoppingCartPage.class);
     }
+    // Items from Women Tops and Blouses
     public ShoppingCartPage addLudLowOxfordToCart(String numberOfItem){
         selectSizeColorQTYAndAddToCart(numberOfItem,whiteColor,smallSize);
         return PageFactory.initElements(driver,ShoppingCartPage.class);
@@ -80,8 +88,37 @@ public class AddToCartPage {
         return PageFactory.initElements(driver, ShoppingCartPage.class);
     }
     public ShoppingCartPage addNolitaCamiTopToCart(String numberOfItem){
-        selectSizeColorQTYAndAddToCart(numberOfItem, blackColor, sizeMedium);
+        selectSizeColorQTYAndAddToCart(numberOfItem, blackColor, smallSize);
         return PageFactory.initElements(driver,ShoppingCartPage.class);
+    }
+
+    //ITems from Women Dresses and SKirts
+    public ShoppingCartPage addEssexPencilSkirtToCart(String numberOfItem){
+        selectSizeColorQTYAndAddToCart(numberOfItem,charcoalColor,sizeMedium);
+        return PageFactory.initElements(driver, ShoppingCartPage.class);
+    }
+
+    public ShoppingCartPage addRacerBackMaxiDressToCart(String numberOfItem){
+        selectSizeColorQTYAndAddToCart(numberOfItem, purpleColor, smallSize);
+        return PageFactory.initElements(driver, ShoppingCartPage.class);
+    }
+    public ShoppingCartPage addLudlowSheathDressToCart(String numberOfItem){
+        selectSizeColorQTYAndAddToCart(numberOfItem, silverColor, sizeMedium);
+        return PageFactory.initElements(driver, ShoppingCartPage.class);
+    }
+
+    //items from MEN Blazer page
+    public ShoppingCartPage addSullivanCoatToCart(String numberOfItem){
+        selectSizeColorQTYAndAddToCart(numberOfItem, silverColor,sizeMedium);
+        return PageFactory.initElements(driver, ShoppingCartPage.class);
+    }
+    public ShoppingCartPage addLinenBlazerToCart(String numberOfItem){
+        selectSizeColorQTYAndAddToCart(numberOfItem, whiteColor, smallSize);
+        return PageFactory.initElements(driver, ShoppingCartPage.class);
+    }
+    public ShoppingCartPage addStretchCottonBlazerToCart(String numberOfItem){
+        selectSizeColorQTYAndAddToCart(numberOfItem, blueColor,smallSize);
+        return PageFactory.initElements(driver, ShoppingCartPage.class);
     }
 
     private void selectSizeColorQTYAndAddToCart(String numberOfItem, WebElement color, WebElement size){

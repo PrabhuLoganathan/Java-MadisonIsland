@@ -1,7 +1,7 @@
 com/syed/madison_island/pages/header/men/TeesKnitsAndPoloPage.class
 com/syed/madison_island/pages/header/women/PantsAndDenimWomenPage.class
 com/syed/madison_island/pages/LandingPage.class
-com/syed/madison_island/tests/SimpleTestWD.class
+com/syed/madison_island/tests/MenSectionTestWD.class
 com/syed/madison_island/pages/header/men/NewArrivalsMenPage.class
 com/syed/madison_island/pages/header/men/PantsAndDenimMenPage.class
 com/syed/madison_island/pages/header/women/TopsAndBlousesPage.class
@@ -13,6 +13,7 @@ com/syed/madison_island/pages/header/men/ShirtsPage.class
 com/syed/madison_island/pages/QuoteListPage.class
 com/syed/madison_island/pages/header/men/BlazerPage.class
 com/syed/madison_island/pages/CheckoutPage.class
+com/syed/madison_island/tests/WomenSectionTestWD.class
 com/syed/madison_island/pages/header/men/MenPage.class
 com/syed/madison_island/tests/Test123.class
 com/syed/madison_island/pages/header/women/NewArrivalsWomenPage.class
